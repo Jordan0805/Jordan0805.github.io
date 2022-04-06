@@ -146,7 +146,7 @@
                     <td class="column1">This is the number that was picked randomly between 0 and 1.<br>0.2805368159479382</td>
                 </tr>
             </table>
-            <table class="border1">
+            <table class="border1 col-6">
                 <tr class="row1">
                     <th class="column1" colspan="4">JavaScript Control Structures</th>
 
@@ -167,18 +167,64 @@
                 </tr>
                 <tr class="row1">
                     <th class="column1">The if Statement</th>
-                    <td class="column1">Use the <code>if</code> statement to specify a block of JavaScript code to be executed if a condition is true.</td>
-                    <td class="column1"></td>
-                    <td class="column1"></td>
+                    <td class="column1">Definition:<br><br>Use the <code>if</code> statement to specify a block of JavaScript code to be executed if a condition is true.</td>
+                    <td class="column1">Example:<br><br><code>if (hour < 18) {</code><br>greeting = <code>"Good day";<br>}</code></td>
+                    <td class="column1">Result:<br><br>The results of greeting will be: <br><br>Good day</td>
                 </tr>
                 <tr class="row1">
                     <th class="column1">The else Statement</th>
+                    <td class="column1">Definition:<br><br>Use the <code>else</code> statement to specifya block of code to be executed if the condition is false.</td>
+                    <td class="column1">Example:<br><br><code>if (hour < 18) {</code><br>greeting = <code>"Good day";<br>}else {</code><br>greeting = <code>"Good evening";<br>}</code></td>
+                    <td class="column1">Result:<br><br>The result of greeting will be:<br><br>Good day</td>
+                </tr>
+                <tr class="row1">
+                    <th class="column1">The else if Statement</th>
+                    <td class="column1">Definition:<br><br>Use the <code>else if</code> statement to specify a new condition if the first condition is false.</td>
+                    <td class="column1">Example:<br><br><code>if (time < 10) {</code><br>greeting = <code>"Good morning";<br>}else if (time < 20) {</code><br>greeting = <code>"Good day";<br>} else {</code><br>greeting = <code>"Good evening";<br>}</code></td>
+                    <td class="column1">Result:<br><br>The result of greeting will be:<br><br>Good morning</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="border1">
+                <tr class="row1">
+                    <th class="column1" colspan="4">JavaScript For Loop</th>
+
+
+
+                </tr>
+                <tr class="row1">
+                    <th class="column1">The For Loop</th>
+                    <td class="column1">Statement 1 is executed (one time) before the execution of the code block.<br><br>Statement 2 defines the condition for executing the code block.<br><br>Statement 3 is executed (every time) after the code block has been executed.</td>
+                    <td class="column1"><code>for (let i = 0; i < 5; i++) { <br>text += "The number is " + i + "br"; <br>}</code></td>
+                    <td class="column1">Statement 1 sets a variable before the loop starts (let i = 0).<br><br>Statement 2 defines the condition for the loop to run (i must be less than 5).<br><br>Statement 3 increases a value (i++) each time the code block in the loop has been executed.</td>
+                </tr>
+                <tr class="row1">
+                    <th class="column1">Statement 1</th>
+                    <td class="column1">Normally you will use statement 1 to initialize the variable used in the loop (let i = 0).<br><br>This is not always the case, JavaScript doesn't care. Statement 1 is optional.<br><br>You can initiate many values in statement 1 (separated by comma):</td>
+                    <td class="column1"><code>for (let i = 0, len = cars.length, text = ""; i < len; i++) { <br>text += cars[i] + "br"; <br>}</code></td>
+                    <td class="column1"></td>
+                </tr>
+                <tr class="row1">
+                    <th class="column1">Statement 2</th>
+                    <td class="column1">Often statement 2 is used to evaluate the condition of the initial variable.<br><br>This is not always the case, JavaScript doesn't care. Statement 2 is also optional.<br><br>If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.</td>
+                    <td class="column1"></td>
+                    <td class="column1"></td>
+                </tr>
+                <tr class="row1">
+                    <th class="column1">Statement 3</th>
+                    <td class="column1">Often statement 3 increments the value of the initial variable.<br><br>This is not always the case, JavaScript doesn't care, and statement 3 is optional.<br><br>Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else.<br><br>Statement 3 can also be omitted (like when you increment your values inside the loop):</td>
+                    <td class="column1"><code>let i = 0;<br>let len = cars.length;<br>let text = "";<br>for (; i < len; ) {<br>text += cars[i] + "br";<br>i++;<br>}</code></td>
+                    <td class="column1"></td>
+                </tr>
+                <tr class="row1">
+                    <th class="column1"></th>
                     <td class="column1"></td>
                     <td class="column1"></td>
                     <td class="column1"></td>
                 </tr>
                 <tr class="row1">
-                    <th class="column1">The else if Statement</th>
+                    <th class="column1"></th>
                     <td class="column1"></td>
                     <td class="column1"></td>
                     <td class="column1"></td>
