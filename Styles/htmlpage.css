@@ -1,0 +1,27 @@
+.border1{
+    border: 3px solid black;
+}
+.row1{
+    border: 1px solid black;
+}
+.column1{
+    border-right: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+h1, h3{
+    text-align: center;
+}
+iframe{
+    height: 650px;
+    width: 500px;
+}
+.ul1{
+    list-style: none;
+}
+.li1{
+    list-style: none;
+}
+.li2{
+    text-align: left;
+}

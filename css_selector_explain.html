@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jordan's Portfolio</title>
+    <title>CSS Selectors Explained</title>
+    <link rel="stylesheet" href="Styles/csspage.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <header class="bg-dark">
-        <h1 class="text-center text-light">Jordan Shaugnessy</h1>
-        <h2 class="text-center text-light">Portfolio</h2>
-    </header>
+    <header>
+        <h1 class="col-12 text-center bg-dark text-light">CSS Selectors</h1>
+
         <nav class="navbar bg-dark">
             <a class="nav-link text-light" href="index.html">Home</a>
             <a class="nav-link text-light" href="resume.html">Resume</a>
-            <div class="dropdown">
+            <div class="dropdown show">
                 <a class="btn btn-dark dropdown-toggle" href="content.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     Assignments
                 </a>
@@ -63,32 +61,49 @@
                 </ul>
             </div>
         </nav>
+    </header>
     <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-7 border border-dark">
-                    <h2 class="text-center">About Me</h2>
-                    <img src="" alt="Picture of Jordan" height="300px">
-                    <p>My Name is Jordan Shaughnessy. I am a student at Madison Park Technical Vocational High School class of 2022. The Vocation that I have been apart of for the last 4 years has been Computer Programming and Web Development.</p><br>
-                    <p>My love for Computers began at a young age when I watched and played on my brothers computer. From that moment on my love for technology had began to grow. As I grew I realized that the world had started to become more and more dependent on technology. So as the world becomes more dependent on technology I don't want to be left behind in what the maybe near future of a technological based society.</p>
-                </div>
-                <div class="col-md-5 border border-dark">
-                    <div class="text-center">
-                        <h2>Certifications</h2>
-                    </div>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="Images/Excel.png" alt="Excel Cert"><br>
-                        <img class="img-fluid rounded" src="Images/OSHA.png" alt="OSHA Cert"><br>
-                        <img class="img-fluid rounded" src="Images/MTA.png" alt="MTA Cert">
-                    </div>
+        <h1>CSS Selectors</h1>
+        <table class="border2">
 
-                </div>
-            </div>
-        </div>
+            <tr class="row2">
+                <th class="column2"><h3>Name</h3></th>
+                <th class="column2"><h3>Element</h3></th>
+                <th class="column2"><h3>Definition</h3></th>
+            </tr>
+            <tr class="row2">
+                <th class="column2">Class Selector</th>
+                <td class="column2"><code>.hat</code></td>
+                <td class="column2">The Class Selector finds all the elements that have the class of <code>hat</code>.</td>
+            </tr>
+            <tr class="row2">
+                <th class="column2">Element Selector</th>
+                <td class="column2"><code>p</code></td>
+                <td class="column2">The Element Selector will select all the tags that have the <code>p</code> tag.</td>
+            </tr>
+            <tr class="row2">
+                <th class="column2">Id Selector</th>
+                <td class="column2"><code>#name</code></td>
+                <td class="column2">The Id Selector will select the element with the id of <code>name</code>.</td>
+            </tr>
+            <tr class="row2">
+                <th class="column2">Element Class Selector</th>
+                <td class="column2"><code>p.hat</code></td>
+                <td class="column2">The Element Class Selector will select only the <code>p</code> tags with the class of <code>hat</code>.</td>
+            </tr>
+            <tr class="row2">
+                <th class="column2">Universal Selector</th>
+                <td class="column2"><code>*</code></td>
+                <td class="column2">The Universal Selector will select every element.</td>
+            </tr>
+            <tr class="row2">
+                <th class="column2">Group Selectors</th>
+                <td class="column2"><code>h1, h2, p</code></td>
+                <td class="column2">The Group Selector will selects all the <code>h1</code>, <code>h2</code>, and <code>p</code> tags.</td>
+            </tr>
 
+        </table>
     </main>
-    <footer>
 
-    </footer>
 </body>
 </html>

@@ -1,0 +1,126 @@
+table{
+    color:white;
+}
+th {
+    font-family: Georgia, Times, “Times New Roman”, serif;
+}
+td{
+    font-family: Baskerville, “Times New Roman”, Times, serif;
+}
+h1{
+    font-family: Georgia, Times, “Times New Roman”, serif;
+}
+p{
+    font-family: Baskerville, “Times New Roman”, Times, serif;
+    font-size: 25px;
+}
+/* Changed how the list looks like with this class.*/
+.list{
+    font-family: Baskerville, “Times New Roman”, Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+/* This was used to style the first table header with this class in each table. */
+.mainHeader{
+    font-family:Georgia, Times, “Times New Roman”, serif;
+    font-size:20px;
+    background-color:red;
+    color:black;
+}
+/* This was used to style table headers with this class in the other rows of each table. */
+.header{
+    font-family:Georgia, Times, “Times New Roman”, serif;
+    font-size:20px;
+    background-color:red;
+    color:black;
+    text-align: right;
+}
+/* This is used to style table data's with this class in each table. */
+.data{
+    font-family:Baskerville, “Times New Roman”, Times, serif;
+    font-size:20px;
+    background-color:black;
+    color:red;
+}
+/* Uesd to style the first letter of each paragraph with this class. */
+.first-letter{
+    font-family:Baskerville, “Times New Roman”, Times, serif;
+    font-size:30px;
+    color:red;
+    font-weight:bold;
+    font-style:italic;
+    background-color:black;
+}
+/* This is used to style table data's with this class in each table. */
+.data2{
+    font-family:Baskerville, “Times New Roman”, Times, serif;
+    font-size:20px;
+    background-color:midnightblue;
+    color:skyblue;
+}
+/* This was used to style table headers with this class in the other rows of each table. */
+.header2{
+    font-family:Georgia, Times, “Times New Roman”, serif;
+    font-size:20px;
+    background-color:midnightblue;
+    color:skyblue;
+    text-align: right;
+}
+/* This was used to style the first table header with this class in each table. */
+.mainHeader2{
+    font-family:Georgia, Times, “Times New Roman”, serif;
+    font-size:20px;
+    background-color:midnightblue;
+    color:skyblue;
+}
+/* Uesd to style the first letter of each paragraph with this class. */
+.second-letter{
+    font-family:Baskerville, “Times New Roman”, Times, serif;
+    font-size:30px;
+    color:skyblue;
+    font-weight:bold;
+    font-style:italic;
+    background-color:midnightblue;
+}
+/* This is used to style table data's with this class in each table. */
+.data3{
+    font-family:Baskerville, “Times New Roman”, Times, serif;
+    font-size:20px;
+    background-color:rebeccapurple;
+    color:white;
+}
+/* This was used to style the first table header with this class in each table. */
+.mainHeader3{
+    font-family:Georgia, Times, “Times New Roman”, serif;
+    font-size:20px;
+    background-color:rebeccapurple;
+    color:white;
+}
+/* This was used to style table headers with this class in the other rows of each table. */
+.header3{
+    font-family:Georgia, Times, “Times New Roman”, serif;
+    font-size:20px;
+    background-color:rebeccapurple;
+    color:white;
+    text-align: right;
+}
+/* Uesd to style the first letter of each paragraph with this class. */
+.third-letter{
+    font-family:Baskerville, “Times New Roman”, Times, serif;
+    font-size:30px;
+    color:white;
+    font-weight:bold;
+    font-style:italic;
+    background-color:rebeccapurple;
+}
+.nav{
+    border: 1px solid black;
+    width: 200px;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+
+}

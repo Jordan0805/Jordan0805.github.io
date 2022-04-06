@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Styles/formpage.css">
+</head>
+<body>
+    <header>
+        <h1>Gaming Profile</h1>
+    </header>
+    <main>
+        <form>
+            <label for="userName">Username: </label>
+            <input type="text" id="userName" name="name"><br>
+
+            <label for="passWord">Password: </label>
+            <input type="password" id="passWord" name="password"><br>
+
+            <fieldset>
+                <legend>Choose a Gaming Platform</legend>
+                <input type="radio" id="xBox" name="Console">
+                <label for="xBox">Xbox</label><br>
+                <input type="radio" id="ps" name="Console">
+                <label for="ps">PlayStation</label><br>
+                <input type="radio" id="nint" name="Console">
+                <label for="nint">Nintendo</label>
+            </fieldset>
+
+            <label for="console">Choose Your Console</label>
+            <select id="console" name="Xbox_Console">
+                <option value="x1">Xbox One</option>
+                <option value="x1s">Xbox One S</option>
+                <option value="x1x">Xbox One X</option>
+                <option value="xss">Xbox Series S</option>
+                <option value="xsx">Xbox Series X</option>
+                <option value="ps4">PlayStation 4</option>
+                <option value="ps4p">PlayStation 4 Pro</option>
+                <option value="ps5">PlayStation 5</option>
+                <option value="ns">Nintendo Switch</option>
+            </select><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" placeholder="Favorite thing about the Console you use..."></textarea><br><br>
+
+            <label for="sendInfo">Send me more Information: </label>
+            <input type="checkbox" id="sendInfo" name="info" value="send_info"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

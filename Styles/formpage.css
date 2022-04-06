@@ -1,0 +1,13 @@
+input[type="text"], input[type="checkbox"], select {
+    margin-bottom: 20px;
+}
+
+textarea {
+    margin-bottom: 10px;
+}
+
+fieldset {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

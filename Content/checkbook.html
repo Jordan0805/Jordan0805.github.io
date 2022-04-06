@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            class Check {
+                constructor(date, checkNum, item, budgetType, cost) {
+                    this.date = date;
+                    this.checkNum = parseInt(checkNum);
+                    this.item = item;
+                    this.budgetType = budgetType;
+                    this.cost = parseFloat(cost);
+                }
+                nextCheckNum(){
+                    return this.checkNum + 1;
+                }
+            }
+            class CheckBook{
+                constructor(){
+                    this.checkList = [];
+                }
+                subTotal(){
+                    let total = 0.0;
+                    for(let i = 0;i < this.checkList.length;i ++){
+                        total += this.checkList[i].cost
+                    }
+                    return total;
+                }
+
+            }
+            let checkBook = new CheckBook();
+            const subtotalText = document.querySelector("input#subtotal")
+
+            const checkbookBody = document.querySelector("#rowUno")
+
+            checkbookBody.addEventListener("click", function(event) {
+                //use event.target here
+                if (event.target.matches('button')){
+
+
+                    const tableRow = event.target.parentNode.parentNode;
+                    const date = tableRow.querySelector("input.date").value;
+                    // console.log(date);
+                    const checkNumber = tableRow.querySelector("input.checkNumber").value;
+                    // console.log(typeof checkNumber);
+                    const item = tableRow.querySelector("input.item").value;
+                    // console.log(item);
+                    const budgetType = tableRow.querySelector("input.budgetType").value;
+                    // console.log(budgetType);
+                    const cost = tableRow.querySelector("input.cost").value;
+                    // console.log(typeof cost);
+
+
+                    const check = new Check(date, checkNumber, item, budgetType, cost);
+
+                    const newRow = `
+                        <tr>
+                            <td><input type="date" class="date"></td>
+                            <td><input type="number" min="501" class="checkNumber" value="${check.nextCheckNum()}"></td>
+                            <td><input type="text" class="item"></td>
+                            <td><input type="list" list="budgetItems" class="budgetType"></td>
+                            <td><span>$</span><input type="number" class="cost"><button type="button">Save</button></td>
+                        </tr>`;
+                    checkbookBody.insertAdjacentHTML('beforeend',newRow);
+                    checkBook.checkList.push(check)
+                    subtotalText.value = checkBook.subTotal().toFixed(2);
+
+                }
+            });
+
+
+        })
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Checkbook and Budget Calculator</h1>
+
+    <datalist id="budgetItems">
+        <option value="Housing">
+        <option value="Food">
+        <option value="Clothing">
+        <option value="Utilties">
+        <option value="Transportation">
+        <option value="Entertainment">
+        <option value="Miscellaneous">
+    </datalist>
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Check #</th>
+            <th>Item</th>
+            <th>Budget Type</th>
+            <th>Cost</th>
+        </tr>
+        </thead>
+        <tbody id="rowUno">
+        <tr>
+            <td><input type="date" class="date"></td>
+            <td><input type="number" min="501" class="checkNumber"></td>
+            <td><input type="text" class="item"></td>
+            <td><input type="list" list="budgetItems" class="budgetType"></td>
+            <td><span>$</span><input type="number" class="cost"><button type="button">Save</button></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4"></td>
+            <td><label>SubTotal </label><span>$</span><input type="number" id="subtotal"></td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

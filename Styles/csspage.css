@@ -1,0 +1,42 @@
+.border2{
+    border: 3px solid black;
+}
+.row2{
+    border: 1px solid black;
+}
+.column2{
+    border-right: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.boxmodel{
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+    background-color: darkblue;
+ }
+.margin2{
+    border: 1px solid black;
+    padding: 50px 50px 50px 50px;
+    background-color: blue;
+    color: white;
+}
+.padding2{
+    border: 1px solid black;
+    padding: 50px 50px 50px 50px;
+    background-color: blue;
+    color: white;
+}
+.border3{
+    border: 1px solid black;
+    padding: 50px 50px 50px 50px;
+    background-color: darkblue;
+    color: white;
+}
+.content2{
+    border: 1px solid black;
+    padding: 50px 50px 50px 50px;
+    background-color: darkblue;
+}
+h1, h3{
+    text-align: center;
+}
